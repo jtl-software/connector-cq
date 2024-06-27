@@ -19,10 +19,5 @@
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "dev-main"
-        }
     }
 }
