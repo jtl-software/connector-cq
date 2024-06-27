@@ -12,12 +12,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Jtl\\Connector\\Cq\\": "src/"
+            "Jtl\\": "JtlConnector/"
         }
     },
     "config": {
         "allow-plugins": {
             "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "dev-main"
         }
     }
 }

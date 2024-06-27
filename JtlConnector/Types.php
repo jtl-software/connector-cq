@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Jtl\Connector\Cq;
+namespace Jtl;
 
 class Types
 {

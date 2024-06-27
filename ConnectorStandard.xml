@@ -35,9 +35,9 @@
             <exclude name="Squiz.Commenting.PostStatementComment.Found"/>
             <exclude name="Squiz.Commenting.InlineComment.SpacingAfter"/>
     </rule>
-    <rule ref="Jtl.Connector.Qc.Commenting.FunctionComment">
-        <exclude name="Jtl.Connector.Qc.Commenting.FunctionComment.ParamCommentFullStop"/>
-        <exclude name="Jtl.Connector.Qc.Commenting.FunctionComment.ParamCommentNotCapital"/>
+    <rule ref="JtlConnector.Commenting.FunctionComment">
+        <exclude name="JtlConnector.Commenting.FunctionComment.ParamCommentFullStop"/>
+        <exclude name="JtlConnector.Commenting.FunctionComment.ParamCommentNotCapital"/>
     </rule>
     <rule ref="PSR12"/>
     <rule ref="Squiz.Functions.FunctionDeclarationArgumentSpacing">
