@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jtl\\Connector\\Cq\\Sniffs\\": "src/"
+            "Jtl\\Connector\\Cq\\": "src/"
         }
     },
     "config": {
