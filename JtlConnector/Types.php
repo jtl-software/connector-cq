@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Jtl;
+namespace JtlConnector;
 
 class Types
 {

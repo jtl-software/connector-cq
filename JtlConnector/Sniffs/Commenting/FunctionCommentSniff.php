@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Jtl\Sniffs\Commenting;
+namespace JtlConnector\Sniffs\Commenting;
 
-use Jtl\Types;
+use JtlConnector\Types;
 use PHP_CodeSniffer\Config;
 use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Util\Common;
