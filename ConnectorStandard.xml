@@ -36,6 +36,7 @@
             <exclude name="Squiz.Commenting.InlineComment.NoSpaceBefore"/>
             <exclude name="Squiz.Commenting.PostStatementComment.Found"/>
             <exclude name="Squiz.Commenting.InlineComment.SpacingAfter"/>
+            <exclude name="Squiz.Commenting.PostStatementComment"/>
     </rule>
     <rule ref="JtlConnector.Commenting.FunctionComment">
         <exclude name="JtlConnector.Commenting.FunctionComment.ParamCommentFullStop"/>
