@@ -13,11 +13,6 @@ class FunctionCommentSniff extends \PHP_CodeSniffer\Standards\Squiz\Sniffs\Comme
 {
     protected string|int|null $phpVersion = null;
 
-    /**
-     * Whether to skip inheritdoc comments.
-     *
-     * @var bool
-     */
     public $skipIfInheritdoc = true;
 
     /**
@@ -29,7 +24,7 @@ class FunctionCommentSniff extends \PHP_CodeSniffer\Standards\Squiz\Sniffs\Comme
      *
      * @return void
      */
-    protected function processReturn(File $phpcsFile, $stackPtr, $commentStart): void
+    protected function processReturn(File $phpcsFile, int $stackPtr, int $commentStart): void
     {
         $tokens = $phpcsFile->getTokens();
         $return = null;
@@ -190,7 +185,7 @@ class FunctionCommentSniff extends \PHP_CodeSniffer\Standards\Squiz\Sniffs\Comme
      *
      * @return void
      */
-    protected function processParams(File $phpcsFile, $stackPtr, $commentStart): void
+    protected function processParams(File $phpcsFile, int $stackPtr, int $commentStart): void
     {
         if ($this->phpVersion === null) {
             $this->phpVersion = Config::getConfigData('php_version');
@@ -585,7 +580,7 @@ class FunctionCommentSniff extends \PHP_CodeSniffer\Standards\Squiz\Sniffs\Comme
      *
      * @return void
      */
-    protected function processThrows(File $phpcsFile, $stackPtr, $commentStart): void
+    protected function processThrows(File $phpcsFile, int $stackPtr, int $commentStart): void
     {
         $tokens = $phpcsFile->getTokens();
 
@@ -660,7 +655,7 @@ class FunctionCommentSniff extends \PHP_CodeSniffer\Standards\Squiz\Sniffs\Comme
      *
      * @return boolean TRUE if the docblock contains only {@inheritdoc} (case-insensitive).
      */
-    protected function checkInheritdoc(File $phpcsFile, $stackPtr, $commentStart): bool
+    protected function checkInheritdoc(File $phpcsFile, int $stackPtr, int $commentStart): bool
     {
         $tokens = $phpcsFile->getTokens();
 
